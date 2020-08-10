@@ -45,3 +45,10 @@ docker run --name metabase-migration \
 ```
 sudo apt install postgresql postgresql-contrib
 ```
+
+**change password**
+```
+sudo -i -u postgres
+psql
+postgres=# ALTER USER postgres PASSWORD 'myPassword';
+```
