@@ -41,3 +41,7 @@ docker run --name metabase-migration \
     -e "MB_DB_HOST=my-database-host" \
     metabase/metabase load-from-h2
 ```
+### Install Postgresql
+```
+sudo apt install postgresql postgresql-contrib
+```
