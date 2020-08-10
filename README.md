@@ -41,6 +41,16 @@ sudo docker run --name metabase-migration \
     -e "MB_DB_HOST=my-database-host" \
     metabase/metabase load-from-h2
 ```
+```
+sudo docker run -d -p 3000:3000 \
+  -e "MB_DB_TYPE=postgres" \
+  -e "MB_DB_DBNAME=metabase" \
+  -e "MB_DB_PORT=5432" \
+  -e "MB_DB_USER=postgres" \
+  -e "MB_DB_PASS=123456" \
+  -e "MB_DB_HOST=localhost" \
+  --name metabase metabase/metabase
+```
 ### Install Postgresql
 ```
 sudo apt install postgresql postgresql-contrib
@@ -52,3 +62,5 @@ sudo -i -u postgres
 psql
 postgres=# ALTER USER postgres PASSWORD 'myPassword';
 ```
+
+
