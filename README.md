@@ -30,7 +30,7 @@ The migration process involves 2 main steps:
 Using a Postgres container as the target, here’s an example invocation:
 
 ```
-docker run --name metabase-migration \
+sudo docker run --name metabase-migration \
     -v /path/metabase/data:/metabase-data \
     -e "MB_DB_FILE=/metabase-data/metabase.db" \
     -e "MB_DB_TYPE=postgres" \
