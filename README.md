@@ -63,4 +63,3 @@ psql
 postgres=# ALTER USER postgres PASSWORD 'myPassword';
 ```
 
-
