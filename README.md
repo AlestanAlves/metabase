@@ -62,4 +62,3 @@ sudo -i -u postgres
 psql
 postgres=# ALTER USER postgres PASSWORD 'myPassword';
 ```
-
