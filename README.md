@@ -24,7 +24,6 @@ To migrate an existing Metabase container from an H2 application database to ano
 
 The migration process involves 2 main steps:
 
-
     Stop the existing Metabase container
     Run a new, temporary Metabase container to perform the migration
 
