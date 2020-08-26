@@ -8,7 +8,6 @@ Number, Progress bar, Table, Line chart, Bar chart, Row chart, Area chart, Scatt
 
 ### Run metabase on docker
 
-
 ```
 docker run -d -p 3000:3000 --name metabase metabase/metabase
 ```
